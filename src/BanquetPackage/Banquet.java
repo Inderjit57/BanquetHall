@@ -13,7 +13,7 @@ public class Banquet {
 
 	double cessPercent;
 	double noOfGuests;
-	boolean isValid;
+	boolean isValid; // No. of guests
 
 	double totalCost;
 
