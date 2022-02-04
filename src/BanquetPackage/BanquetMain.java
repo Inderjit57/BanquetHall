@@ -11,10 +11,10 @@ public class BanquetMain {
 
 		int fixedBaseCost = 1500;
 		int minimumFoodCost = 1000;
-        boolean isValidEntry = true;
-        int guestMaxCapacity = 500;
-        int guestMinCapacity = 20;
-        
+		boolean isValidEntry = true;
+		int guestMaxCapacity = 500;
+		int guestMinCapacity = 20;
+
 		// TOTAL BASE COST
 		while (isValidEntry) {
 			System.out.println("\nEnter base cost");
@@ -47,22 +47,22 @@ public class BanquetMain {
 			banquet.noOfGuests = sc.nextDouble();
 			if (banquet.noOfGuests < guestMinCapacity) {
 				System.out.println("Minimum Capacity is 20 people"); // ANY NEGATIVE NUMBER IS NOT APPLICABLE
-			    break;
-			} else if (banquet.noOfGuests > guestMaxCapacity){
-			    System.out.println("MAX CAPACITY IS 500"); // Banquet Hall Max Capacity is 500
-			    break; 
+				break;
+			} else if (banquet.noOfGuests > guestMaxCapacity) {
+				System.out.println("MAX CAPACITY IS 500"); // Banquet Hall Max Capacity is 500
+				break;
 			} else {
-			double setNoOfGuests = banquet.calculateCess(banquet.noOfGuests);
-			double setTotalCost = banquet.calculateTotalCost();
-			
-			System.out.println("\nNo of guests: " + banquet.noOfGuests);
-			System.out.println("Total Base cost: " + setCalculateBaseCost);
-			System.out.println("Service cess: " + setNoOfGuests);
-			System.out.println("Tax applied: " + banquet.taxPercent);
-			System.out.println("Total tax on Base Cost: " + setTaxPercentage);
-			System.out.println("Total Cost is: " + setTotalCost);
-			System.out.println("Have a nice day");
-			break;
+				double setNoOfGuests = banquet.calculateCess(banquet.noOfGuests);
+				double setTotalCost = banquet.calculateTotalCost();
+
+				System.out.println("\nNo of guests: " + banquet.noOfGuests);
+				System.out.println("Total Base cost: " + setCalculateBaseCost);
+				System.out.println("Service cess: " + setNoOfGuests);
+				System.out.println("Tax applied: " + banquet.taxPercent);
+				System.out.println("Total tax on Base Cost: " + setTaxPercentage);
+				System.out.println("Total Cost is: " + setTotalCost);
+				System.out.println("Have a nice day");
+				break;
 			}
 		}
 	}

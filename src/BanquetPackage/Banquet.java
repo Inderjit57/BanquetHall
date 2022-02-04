@@ -34,7 +34,7 @@ public class Banquet {
 
 	double calculateCess(double noOfGuests) {
 		this.noOfGuests = noOfGuests;
-	
+
 		if (noOfGuests <= 40) {
 			cessPercent = 0.04 * totalBaseCost; // CESS IS 4% OF TOTAL BILL BEFORE TAX
 		} else if (noOfGuests > 40 && noOfGuests <= 80) {
